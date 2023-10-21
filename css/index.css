@@ -1,0 +1,268 @@
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header{
+    height: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35rem;
+}
+
+.header .left{
+
+}
+
+.header .left p{
+    font-size: 0.4rem;
+    color: var(--ems-primary-text-color);
+    font-weight: 500;
+    line-height: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.header .left h4{
+    font-size: 1rem;
+    color: var(--ems-secondary-text-color);
+    font-weight: 600;
+    line-height: 1rem;
+}
+.header .right {    
+display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  background-color: var(--ems-bg-secondary-color);
+  padding: 0.25rem;
+  border-radius: 6rem;
+}
+
+.header .right .containerSearchBar{
+    border-radius: 6rem;
+    transition: width 0.2s;
+    position: relative;
+    z-index: 50;
+    display: flex;
+}
+
+.header .right .containerSearchBar .searchBar{
+    height: 1.5rem;
+    width: 14rem;
+    border-radius: 6rem;
+    background-color: var(--ems-bg-primary-color);
+    display: flex;
+    margin-right: 0.3rem;
+}
+
+
+.header .right .containerSearchBar .searchBar > i{
+    font-size: 0.6rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.header .right .containerSearchBar .searchBar input{
+    background-color: transparent;
+    width: 0px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: #fff;
+    height: 1.5rem;
+}
+.header .right .containerSearchBar select{
+    background-color: transparent;
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #ababab;
+    margin-right: 0.5rem;
+}
+.header .right .add {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.header .right .add i{
+    font-size: 0.6rem;
+    color: var(--ems-bg-secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header .right .containerSearchBar .sort{
+    height: 1.5rem;
+    border-radius: 6rem;
+    background-color: var(--ems-bg-primary-color);
+    display: flex;
+    padding: 0 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.header .right .containerSearchBar .sort select{
+    margin: 0;
+    width: 4rem;
+}
+
+
+.containerListUser{
+    padding: 0.8rem 1rem 1.3rem 1rem;
+    background-color: #171717;
+    border-radius: 0.3rem;
+    width: 35rem;
+
+}
+
+.containerListUser .listUser{
+
+}
+
+.containerListUser .listUser .legende{
+    display: flex;
+    margin-bottom: 0.2rem;
+}
+
+.containerListUser .listUser .legende p{
+    padding-left: 0.18rem;
+    font-size: 0.48rem;
+    font-weight: 500;
+    color: var(--ems-primary-text-color);
+}
+
+.containerListUser .listUser .legende .picture {
+    width: 8%;
+}
+
+.containerListUser .listUser .legende .name {
+    width: 15.6%;
+}
+
+.containerListUser .listUser .legende .number {
+    width: 13.6%;
+}
+
+.containerListUser .listUser .legende .mail {
+    width: 20%;
+}
+
+.containerListUser .listUser .legende .age {
+    width: 6%;
+}
+
+.containerListUser .listUser .legende .speciality {
+    width: 14.6%;
+}
+
+.containerListUser .listUser .legende .lastDiploma {
+    flex-grow: 1;
+    width: 0px;
+}
+
+
+.containerListUser .listUser .list {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 20rem;
+}
+
+.containerListUser .listUser .list .item {
+    width: 100%;
+    height: 1.8rem;
+    background-color: var(--ems-bg-primary-color);
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    border: solid 0.1rem var(--ems-bg-primary-color);
+}
+
+.containerListUser .listUser .list .item > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+    font-weight: 500;
+    color: var(--ems-primary-text-color);
+}
+
+
+.containerListUser .listUser .list .item .picture {
+    width: 8%;
+    padding: 0.08rem 0.08rem;
+}
+.containerListUser .listUser .list .item .picture img{
+    height: 1.515rem;
+  width: 1.515rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.containerListUser .listUser .list .item .name {
+    width: 15.6%;
+    padding-left: 0.18rem;
+}
+.containerListUser .listUser .list .item .number {
+    width: 13.6%;
+    padding-left: 0.18rem;
+}
+
+.containerListUser .listUser .list .item .mail {
+    width: 20%;
+    padding-left: 0.18rem;
+}
+
+.containerListUser .listUser .list .item .age {
+    width: 6%;
+    padding-left: 0.18rem;
+}
+
+.containerListUser .listUser .list .item .speciality {
+    width:  14.6%;
+    padding-left: 0.18rem;
+}
+
+.containerListUser .listUser .list .item .lastDiploma {
+    flex-grow: 1;
+    width: 0px;
+    padding-left: 0.18rem;
+}
+
+
+
+.containerListUser .listUser .list .item .btns {
+    margin-right: 0.5rem;
+   
+}
+.containerListUser .listUser .list .item .btns button{
+    background-color: transparent;
+    height: 1.3rem;
+    width: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.55rem;
+    font-weight: 500;
+    color: var(--ems-primary-text-color);
+    background-color: transparent;
+}
+
+
+

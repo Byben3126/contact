@@ -1,0 +1,210 @@
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header{
+    height: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35rem;
+}
+
+.header .left{
+
+}
+
+.header .left p{
+    font-size: 0.4rem;
+    color: var(--ems-primary-text-color);
+    font-weight: 500;
+    line-height: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.header .left h4{
+    font-size: 1rem;
+    color: var(--ems-secondary-text-color);
+    font-weight: 600;
+    line-height: 1rem;
+}
+.header .right {    
+display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  background-color: var(--ems-bg-secondary-color);
+  padding: 0.25rem;
+  border-radius: 6rem;
+}
+
+.header .right .containerSearchBar{
+    border-radius: 6rem;
+    transition: width 0.2s;
+    width: 15rem;
+    position: relative;
+    z-index: 50;
+    display: flex;
+}
+
+.header .right .containerSearchBar form.searchBar{
+    height: 1.5rem;
+    width: 11rem;
+    border-radius: 6rem;
+    background-color: var(--ems-bg-primary-color);
+    display: flex;
+    margin-right: 0.3rem;
+}
+
+
+.header .right .containerSearchBar form.searchBar > i{
+    font-size: 0.6rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.header .right .containerSearchBar form.searchBar input{
+    background-color: transparent;
+    width: 0px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: #fff;
+    height: 1.5rem;
+}
+.header .right .containerSearchBar select{
+    background-color: transparent;
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #ababab;
+    margin-right: 0.5rem;
+}
+
+.header .right .containerSearchBar .sort{
+    height: 1.5rem;
+    border-radius: 6rem;
+    background-color: var(--ems-bg-primary-color);
+    display: flex;
+    padding: 0 0.8rem;
+}
+
+.header .right .containerSearchBar .sort select{
+    margin: 0;
+    width: 4rem;
+}
+
+
+.containerEditUser{
+    padding: 1rem;
+    background-color: #171717;
+    border-radius: 0.3rem;
+    width: 35rem;
+
+}
+
+.containerEditUser .editUser {
+    display: flex;
+    width: 100%;
+}
+.containerEditUser .editUser .picture {
+    border-radius: 0.2rem;
+    overflow: hidden;
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    background-color: #edf2f7;
+}
+
+.containerEditUser .editUser .picture i {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+    padding: 0.3rem 0.3rem 0 0;
+    font-size: 0.7rem;
+    opacity: 0.5;
+    transition: 0.1s;
+}
+
+.containerEditUser .editUser .picture:hover i.fa-pen {
+    opacity: 1;
+}
+
+.containerEditUser .editUser .picture img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.containerEditUser .editUser .mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 0;
+    margin-left: 0.7rem;
+}
+
+.containerEditUser .editUser .mainInfo > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerEditUser .editUser .mainInfo > div label{
+    font-size: 0.48rem;
+    font-weight: 500;
+    color: var(--ems-primary-text-color);
+}
+
+.containerEditUser .editUser .mainInfo > div .containerInput{
+    background-color: var(--ems-bg-primary-color);
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    display: flex;
+    width: 100%;
+    padding-left: 0.4rem;
+    position: relative;
+}
+
+.containerEditUser .editUser .mainInfo > div .containerInput input{
+    background-color: transparent;
+    outline: none;
+    font-size: 0.55rem;
+    font-weight: 500;
+    color: var(--ems-primary-text-color);
+    height: 100%;
+    flex-grow: 1;
+    width: 0;
+}
+
+.containerEditUser .btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.containerEditUser .btns button{
+    border-radius: 0.2rem;
+    background-color: var(--ems-primary-color);
+    height: 1.5rem;
+    padding: 0 0.7rem;
+    font-size: 0.5rem;
+    font-weight: 500;
+    color: var(--ems-secondary-text-color);
+}

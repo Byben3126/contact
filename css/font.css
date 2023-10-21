@@ -1,0 +1,144 @@
+/* latin-ext */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+    }
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+    }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+    }
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+}
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+}
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+}
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+}
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+ }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZ2IHTWCBl0-8RH9.woff2) format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZOIHTWCBl0-8Q.woff2) format('woff2');
+  }
