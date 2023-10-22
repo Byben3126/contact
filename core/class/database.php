@@ -1,21 +1,19 @@
 <?php 
 
+
 class Database { 
     
-    private static $dbName = 'nws' ; 
-    private static $dbHost = 'localhost' ; 
-    private static $dbUsername = 'root'; 
-    private static $dbUserPassword = 'root'; 
-    private static $cont = null; 
-    
+    private static $cont = null;
+
     public function __construct() { 
-        die('Init function is not allowed'); 
+        die('Impossible de faire une instance de cette classe'); 
     } 
     
     public static function connect() { 
         if ( null == self::$cont ) { 
             try { 
-                self::$cont = new PDO("mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword); 
+                $configData = json_decode(file_get_contents('config.json'), true);
+                self::$cont = new PDO("mysql:host=".$configData["dbHost"].";"."dbname=".$configData["dbName"], $configData["dbUsername"], $configData["dbUserPassword"]); 
             } catch(PDOException $e) { 
                 die($e->getMessage()); 
             }

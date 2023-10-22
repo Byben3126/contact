@@ -24,6 +24,10 @@
     font-weight: 600;
     line-height: 1rem;
 }
+
+.header .left a:hover{
+   text-decoration: underline !important;
+}
 .header .right {    
 display: grid;
   grid-auto-flow: column;

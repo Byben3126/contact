@@ -1,0 +1,6 @@
+{
+    "dbName": "nws",
+    "dbHost": "localhost",
+    "dbUsername": "root",
+    "dbUserPassword": "root"
+}
