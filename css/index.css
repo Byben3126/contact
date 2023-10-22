@@ -9,117 +9,6 @@ body {
     min-height: 100vh;
 }
 
-.header{
-    height: 3.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 35rem;
-}
-
-.header .left{
-
-}
-
-.header .left p{
-    font-size: 0.4rem;
-    color: var(--ems-primary-text-color);
-    font-weight: 500;
-    line-height: 0.4rem;
-    margin-bottom: 0.3rem;
-}
-
-.header .left h4{
-    font-size: 1rem;
-    color: var(--ems-secondary-text-color);
-    font-weight: 600;
-    line-height: 1rem;
-}
-.header .right {    
-display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  background-color: var(--ems-bg-secondary-color);
-  padding: 0.25rem;
-  border-radius: 6rem;
-}
-
-.header .right .containerSearchBar{
-    border-radius: 6rem;
-    transition: width 0.2s;
-    position: relative;
-    z-index: 50;
-    display: flex;
-}
-
-.header .right .containerSearchBar .searchBar{
-    height: 1.5rem;
-    width: 14rem;
-    border-radius: 6rem;
-    background-color: var(--ems-bg-primary-color);
-    display: flex;
-    margin-right: 0.3rem;
-}
-
-
-.header .right .containerSearchBar .searchBar > i{
-    font-size: 0.6rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-
-.header .right .containerSearchBar .searchBar input{
-    background-color: transparent;
-    width: 0px;
-    flex-grow: 1;
-    outline: none;
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: #fff;
-    height: 1.5rem;
-}
-.header .right .containerSearchBar select{
-    background-color: transparent;
-    font-size: 0.5rem;
-    font-weight: 400;
-    color: #ababab;
-    margin-right: 0.5rem;
-}
-.header .right .add {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: #FFF;
-    border-radius: 50%;
-}
-
-.header .right .add i{
-    font-size: 0.6rem;
-    color: var(--ems-bg-secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.header .right .containerSearchBar .sort{
-    height: 1.5rem;
-    border-radius: 6rem;
-    background-color: var(--ems-bg-primary-color);
-    display: flex;
-    padding: 0 0.8rem;
-    margin-right: 0.5rem;
-}
-
-.header .right .containerSearchBar .sort select{
-    margin: 0;
-    width: 4rem;
-}
 
 
 .containerListUser{
@@ -191,6 +80,12 @@ display: grid;
     align-items: center;
     margin-bottom: 0.3rem;
     border: solid 0.1rem var(--ems-bg-primary-color);
+    cursor: pointer;
+}
+
+
+.containerListUser .listUser .list .item:hover {
+    border: solid 0.1rem var(--ems-primary-color);
 }
 
 .containerListUser .listUser .list .item > div {
@@ -251,7 +146,7 @@ display: grid;
     margin-right: 0.5rem;
    
 }
-.containerListUser .listUser .list .item .btns button{
+.containerListUser .listUser .list .item .btns a{
     background-color: transparent;
     height: 1.3rem;
     width: 1.3rem;
@@ -262,6 +157,7 @@ display: grid;
     font-weight: 500;
     color: var(--ems-primary-text-color);
     background-color: transparent;
+    text-decoration: none;
 }
 
 

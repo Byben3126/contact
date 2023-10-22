@@ -1,3 +1,30 @@
+<?php
+require 'core/class/contact.php';
+
+function valid_donnees($donnees){
+    $donnees = trim($donnees);
+    $donnees = stripslashes($donnees);
+    $donnees = htmlspecialchars($donnees);
+    return $donnees;
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if(isset($_POST['name']) && isset($_POST['number']) && isset($_POST['mail']) && isset($_POST['age']) && isset($_POST['speciality']) && isset($_POST['lastDiploma'])) {
+        $name = valid_donnees($_POST['name']);
+        $number = valid_donnees($_POST['number']);
+        $mail = valid_donnees($_POST['mail']);
+        $age = valid_donnees($_POST['age']);
+        $speciality = valid_donnees($_POST['speciality']);
+        $lastDiploma = valid_donnees($_POST['lastDiploma']);
+        $urlPicture = isset($_POST['urlPicture']) ? valid_donnees($_POST['urlPicture']) : "";
+    
+        Contact::createContact($name, $number, $mail , $age, $speciality, $lastDiploma, $urlPicture);
+        header('Location: index.php');
+        exit;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,65 +36,38 @@
 
     <link href="css/font.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-    <link href="css/add.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/edit.css" rel="stylesheet" />
     
 </head>
 <body>
+    <?php require 'components/header.php' ?>
 
-    <div class="header">
-        <div class="left">
-            <p>Administration</p>
-            <h4>Nouveau contact</h4>
-        </div>
-        
-        <div class="right">
-            <div class="containerSearchBar show">
-                <form class="searchBar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input placeholder="Search" value="toto">
-                    <select>
-                        <option>Toto</option>
-                        <option>Toto</option>
-                        <option>Toto</option>
-                    </select>
-                </form>
-
-                <div class="sort">
-                    <select>
-                        <option>trier par Nom</option>
-                        <option>trier par Nom</option>
-                        <option>trier par Nom</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="containerEditUser">
+    <form class="containerEditUser" method="post" action="#">
         <div class="editUser">
             <div class="picture"  id="picture">
-                <input id="inputUrlPicture" hidden></input>
+                <input name="urlPicture" id="inputUrlPicture" hidden></input>
                 <i class="fa-regular fa-pen"></i>
-                <img id="imgPicture" src="https://www.gtanf.com/forums/uploads/monthly_2018_12/avatar-artwork.thumb.jpg.52347ce581c909bdd8487ce4fc53fc95.jpg">
+                <?php echo "<img id='imgPicture' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHnPmUvFLjjmoYWAbLTEmLLIRCPpV_OgxCVA&usqp=CAU'>"; ?>
             </div>
             <div class="mainInfo">
                 <div class="lastName">
                     <label>Nom Prenom</label>
                     <div class="containerInput">
-                        <input value="Clement Guilloux">
+                        <input name="name" value="">
                     </div>
                 </div>
                 <div class="number">
                     <label>Télephone</label>
                     <div class="containerInput">
-                        <input value="06 18 80 85 65">
+                        <input name="number" value="">
                         
                     </div>
                 </div>
                 <div class="email">
                     <label>Email</label>
                     <div class="containerInput">
-                        <input value=clem@gmail.com">
+                        <input name="mail" value="">
                         
                     </div>
                 </div>
@@ -76,29 +76,29 @@
                 <div class="age">
                     <label>Age</label>
                     <div class="containerInput">
-                        <input value="18">
+                        <input name="age" value="" maxlength="3">
                         
                     </div>
                 </div>
                 <div class="specialité">
                     <label>Spécialité</label>
                     <div class="containerInput">
-                        <input value="Developpeur">
+                        <input name="speciality" value="">
                         
                     </div>
                 </div>
                 <div class="diplome">
                     <label>Dernier diplome</label>
                     <div class="containerInput">
-                        <input value="Bac géneral">    
+                        <input name="lastDiploma" value="">    
                     </div>
                 </div>
             </div>
         </div>
         <div class="btns">
-            <button>Ajouter</button>
+            <button type="submit">Ajouter</button>
         </div>
-    </div>
+    </form>
 
     <script src="js/edit.js"></script>
 </body>

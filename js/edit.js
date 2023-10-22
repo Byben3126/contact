@@ -3,7 +3,8 @@ const imgPicture = document.querySelector("#imgPicture");
 const inputPicture = document.querySelector("#inputUrlPicture");
 
 picture.addEventListener("click",()=>{
-    let url = prompt("Veuillez indiquer une URL:", "Url de l'image");
+    let url = prompt("Veuillez indiquer une URL:", "");
     inputPicture.value = url
+    console.log(inputPicture)
     imgPicture.setAttribute("src", url)
 })

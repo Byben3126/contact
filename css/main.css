@@ -19,6 +19,11 @@ border-style: solid;
 border-color: #e5e7eb;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 html {
     background-color: var(--ems-bg-primary-color);
     font-size: 170%;

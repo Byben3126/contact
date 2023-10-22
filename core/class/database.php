@@ -5,7 +5,7 @@ class Database {
     private static $dbName = 'nws' ; 
     private static $dbHost = 'localhost' ; 
     private static $dbUsername = 'root'; 
-    private static $dbUserPassword = ''; 
+    private static $dbUserPassword = 'root'; 
     private static $cont = null; 
     
     public function __construct() { 
