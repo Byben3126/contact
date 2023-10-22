@@ -6,7 +6,7 @@ if (isset($_SERVER['HTTP_REFERER'])) {
     $_SESSION['previous_url'] = $_SERVER['HTTP_REFERER'];
 } else {
     // Par défaut, si l'URL précédente n'est pas disponible, redirigez vers une URL par défaut.
-    $_SESSION['previous_url'] = 'index.php';
+    $_SESSION['previous_url'] = 'read.php';
 }
 
 if (isset($_GET['idContact'])) {

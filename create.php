@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $urlPicture = isset($_POST['urlPicture']) ? valid_donnees($_POST['urlPicture']) : "";
     
         Contact::createContact($name, $number, $mail , $age, $speciality, $lastDiploma, $urlPicture);
-        header('Location: index.php');
+        header('Location: read.php');
         exit;
     }
 }

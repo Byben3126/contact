@@ -7,7 +7,7 @@ if (isset($_GET['idContact'])) {
 }
 
 if(!$contact){
-    header('Location: index.php');
+    header('Location: read.php');
     exit;
 }
 

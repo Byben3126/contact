@@ -1,11 +1,11 @@
 <div class="header">
         <div class="left">
-            <p><a href="index.php" >List contact</a></p>
+            <p><a href="read.php" >List contact</a></p>
             <h4>Contact</h4>
         </div>
         
         <div class="right">
-            <form class="containerSearchBar show" method="get" action="index.php">
+            <form class="containerSearchBar show" method="get" action="read.php">
                 <div class="searchBar">
                     <button type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -40,7 +40,7 @@
                
             </form>
             <div class="add">
-                <a href="add.php"><i class="fa-solid fa-plus"></i></a>
+                <a href="create.php"><i class="fa-solid fa-plus"></i></a>
             </div>
             
         </div>
