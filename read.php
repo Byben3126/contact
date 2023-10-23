@@ -15,7 +15,7 @@
     <link href="css/font.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/read.css" rel="stylesheet" />
     
 </head>
 <body>
