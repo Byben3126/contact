@@ -38,7 +38,7 @@
             <?php
 
                 $contacts = Contact::getContacts(
-                    isset($_GET['sort']) ? $_GET['sort'] : "id",
+                    isset($_GET['sort']) ? ($_GET['sort'] == 'id' ? 'id DESC' : $_GET['sort']) : "id DESC",
                     isset($_GET['valueSearch']) ? $_GET['valueSearch'] : "",
                     isset($_GET['selectSearch']) ? $_GET['selectSearch'] : "name"
                 );
